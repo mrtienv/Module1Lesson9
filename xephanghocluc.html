@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xếp hạng học lực</title>
+</head>
+<body>
+<input type="number" id="score1"> Nhập điểm kiểm tra <br/><br/>
+<input type="number" id="score2"> Nhập điểm thi giữa kì<br/><br/>
+<input type="number" id="score3"> Nhập điểm thi cuối kì<br/><br/>
+<input type="button" onclick="result()" value="Xếp hạng học lực">
+<script>
+    function result() {
+        let a = +document.getElementById('score1').value;
+        let b = +document.getElementById('score2').value;
+        let c = +document.getElementById('score3').value;
+        let result = (a + b + c) / 3;
+        if (result < 5) {
+            alert('Xếp loại yếu');
+        } else if (result <= 7) {
+            alert('Xếp loại trung bình');
+        } else if (result <= 9) {
+            alert('Xếp loại giỏi')
+        } else if(result <= 10){
+            alert('Xếp loại xuất sắc');
+        }       else {
+            alert('Bạn bị ảo tưởng àh');
+        }
+            }
+</script>
+</body>
+</html>

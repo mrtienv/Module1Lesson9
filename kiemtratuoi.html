@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra tuổi</title>
+</head>
+<body>
+<input type="number" id="age"> Nhập số tuổi vào đây<br/><br/>
+<input type="button" onclick="result()" value="Result">
+<script>
+    function result() {
+        let age = +document.getElementById('age').value;
+        if (age < 15) {
+            alert('Học sinh không đủ tuổi vào học lớp 10')
+        }
+        else {
+            alert('Học sinh đủ tuổi vào học lớp 10')
+        }
+
+    }
+</script>
+</body>
+</html>

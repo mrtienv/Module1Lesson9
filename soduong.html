@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Số Dương</title>
+</head>
+<body>
+<input type="number" id="num1"> Nhập số nguyên vào đây <br><br>
+<input type="button" onclick="result()" value="ketqua">
+<script>
+    function result() {
+    let a = +document.getElementById('num1').value;
+    if (a == 0) {
+        alert(a + ' bằng 0');
+    }
+    else if(a > 0) {
+        alert(a + ' lớn hơn 0');
+    }
+        else {
+            alert(a + ' nhỏ hơn 0');
+    }
+    }
+
+</script>
+</body>
+</html>
