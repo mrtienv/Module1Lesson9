@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game Puzzle</title>
+    <style>
+    </style>
+</head>
+<body>
+
+<img src="img/funny-cat1_part2x1.jpg" id="pic1" style="width: 600px; height: 100px;"  alt="" onclick="change1()"/><br>
+<img src="img/funny-cat1_part3x1.jpg" id="pic2" style="width: 600px; height: 100px;" alt="" onclick="change2()"/><br>
+<img src="img/funny-cat1_part4x1.jpg" id="pic3" style="width: 600px; height: 100px;" alt="" onclick="change3()"/><br>
+<img src="img/funny-cat1_part5x1.jpg" id="pic4" style="width: 600px; height: 100px;" alt="" onclick="change4()"/><br>
+
+<script>
+ function change1() {
+     let a = document.getElementById("pic1");
+     let a1 = a.getAttribute("src");
+     switch (a1)  {
+         case ("img/funny-cat1_part2x1.jpg") :
+             a.setAttribute("src","img/monkey_part2x1.jpg");
+             break;
+         case ("img/monkey_part2x1.jpg") :
+             a.setAttribute("src","img/panda_swap_part2x1.jpg");
+             break;
+         case ("img/panda_swap_part2x1.jpg") :
+             a.setAttribute("src","img/funny-cat1_part2x1.jpg");
+             break;
+     }
+ }
+ function change2() {
+     let a = document.getElementById("pic2");
+     let a1 = a.getAttribute("src");
+     switch (a1)  {
+         case ("img/funny-cat1_part3x1.jpg") :
+             a.setAttribute("src","img/monkey_part3x1.jpg");
+             break;
+         case ("img/monkey_part3x1.jpg") :
+             a.setAttribute("src","img/panda_swap_part3x1.jpg");
+             break;
+         case ("img/panda_swap_part3x1.jpg") :
+             a.setAttribute("src","img/funny-cat1_part3x1.jpg");
+             break;
+     }
+ }
+ function change3() {
+     let a = document.getElementById("pic3");
+     let a1 = a.getAttribute("src");
+     switch (a1)  {
+         case ("img/funny-cat1_part4x1.jpg") :
+             a.setAttribute("src","img/monkey_part4x1.jpg");
+             break;
+         case ("img/monkey_part4x1.jpg") :
+             a.setAttribute("src","img/panda_swap_part4x1.jpg");
+             break;
+         case ("img/panda_swap_part4x1.jpg") :
+             a.setAttribute("src","img/funny-cat1_part4x1.jpg");
+             break;
+     }
+ }
+ function change4() {
+     let a = document.getElementById("pic4");
+     let a1 = a.getAttribute("src");
+     switch (a1)  {
+         case ("img/funny-cat1_part5x1.jpg") :
+             a.setAttribute("src","img/monkey_part5x1.jpg");
+             break;
+         case ("img/monkey_part5x1.jpg") :
+             a.setAttribute("src","img/panda_swap_part5x1.jpg");
+             break;
+         case ("img/panda_swap_part5x1.jpg") :
+             a.setAttribute("src","img/funny-cat1_part5x1.jpg");
+             break;
+     }
+ }
+</script>
+</body>
+</html>

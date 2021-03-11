@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Maytinh</title>
+    <style>
+        table {
+
+            border: black;
+            background: white;
+            border-collapse: collapse;
+        }
+        td {
+
+            border-collapse: collapse;
+            color: blue;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <tr>
+        <td colspan="5"><input type="text" value="0"></td>
+    </tr>
+    <tr>
+        <td><input type="button" class="num" onclick="laygiatri()" value="1"></td>
+        <td><input type="button" class="num" onclick="laygiatri()" value="2"></td>
+        <td><input type="button" class="num" onclick="laygiatri()" value="3"></td>
+        <td><input type="button" onclick="add()" value="+"></td>
+    </tr>
+    <tr>
+        <td><input type="button" class="num" onclick="laygiatri()" value="4"></td>
+        <td><input type="button" class="num" onclick="laygiatri()" value="5"></td>
+        <td><input type="button" class="num" onclick="laygiatri()" value="6"></td>
+        <td><input type="button"  onclick="sub()" value="-"></td>
+    </tr>
+    <tr>
+        <td><input type="button" class="num" onclick="laygiatri()" value="7"></td>
+        <td><input type="button" class="num" onclick="laygiatri()" value="8"></td>
+        <td><input type="button" class="num" onclick="laygiatri()" value="9"></td>
+        <td><input type="button" onclick="mul()" value="*"></td>
+    </tr>
+    <tr>
+        <td><input type="button"  value="C"></td>
+        <td><input type="button" class="num" onclick="laygiatri()" value="0"></td>
+        <td><input type="button" onclick="equal()"  value="="></td>
+        <td><input type="button" onclick="div()"  value="/"></td>
+    </tr>
+</table>
+<script>
+    let x, y, z, result;
+    function laygiatri() {
+        let x = parseInt(document.getElementsByClassName('num').value);
+        let y = 0;
+    }
+    function add() {
+        laygiatri();
+        let y += x;
+        let result = y + z;
+    }
+    function sub() {
+        laygiatri();
+        let y += x;
+        let result = y - z;
+    }
+    function mul() {
+        laygiatri();
+        let y += x;
+        let result = y * z;
+    }
+    function div() {
+        laygiatri();
+        let y += x;
+        let result = y * z;
+    }
+    function equal() {
+
+    }
+
+</script>
+</body>
+</html>

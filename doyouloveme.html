@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Do you love me?</title>
+</head>
+<body>
+<!--<h1 style="position:absolute; left:220px; top:175px;">Do you love me?</h1>-->
+<!--<input type="button" value=" YES " onclick="love()" style="position:absolute; left:285px; top:235px;"/>-->
+<!--<input type="button" id="btnNo" value="  NO  " onmouseover="khongthe()" style="position:absolute; left:360px; top:235px;"/>-->
+<h1 style="position:absolute; left:220px; top:175px;">Do you love me?</h1>
+<input type="button" onclick="love()" value="Chắc chắn rồi" style="position:absolute; left:225px; top:255px;">
+<input type="button" id="no" onmouseover="khongthe()" value="Không nhé" style="position:absolute; left: 360px; top: 255px;">
+<h1 id="result" style="text-align: center; color: red; font-weight: bold"></h1>
+<script>
+    function love() {
+        document.getElementById("result").innerHTML = "I love u too ^^"
+    }
+    function khongthe() {
+        // var x = Math.round(Math.random() * window.innerWidth);
+        // var y = Math.round(Math.random() * window.innerHeight);
+        // document.getElementById('btnNo').style.left = x + 'px';
+        // document.getElementById('btnNo').style.top = y + 'px';
+        let a = Math.round(Math.random() * window.innerHeight);
+        let b = Math.round(Math.random() * window.innerWidth);
+        document.getElementById("no").style.left = b + "px";
+        document.getElementById("no").style.top = a + "px";
+    }
+</script>
+</body>
+</html>
